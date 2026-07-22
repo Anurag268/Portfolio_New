@@ -1,12 +1,8 @@
 import React from 'react';
 import { certificates } from '../data/portfolioData';
 
-const CertificateCard = ({ cert, aosDelay }) => (
-  <div 
-    data-aos="zoom-in"
-    data-aos-delay={aosDelay}
-    className="bg-black/20 backdrop-blur-sm rounded-2xl p-5 border border-white/10 hover:border-white/25 hover:scale-105 hover:shadow-[0_15px_40px_rgba(0,0,0,0.3)] transition-all duration-500 cursor-default group"
-  >
+const CertificateCard = ({ cert, aosDelay }) => {
+  const CardContent = (
     <div className="flex items-start gap-4">
       <span className="text-2xl mt-0.5 group-hover:scale-110 transition-transform duration-300">{cert.icon}</span>
       <div>
@@ -18,8 +14,35 @@ const CertificateCard = ({ cert, aosDelay }) => (
         </p>
       </div>
     </div>
-  </div>
-);
+  );
+
+  const containerClasses = "bg-black/20 backdrop-blur-sm rounded-2xl p-5 border border-white/10 hover:border-white/25 hover:scale-105 hover:shadow-[0_15px_40px_rgba(0,0,0,0.3)] transition-all duration-500 group block";
+
+  if (cert.url) {
+    return (
+      <a 
+        href={cert.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        data-aos="zoom-in"
+        data-aos-delay={aosDelay}
+        className={containerClasses}
+      >
+        {CardContent}
+      </a>
+    );
+  }
+
+  return (
+    <div 
+      data-aos="zoom-in"
+      data-aos-delay={aosDelay}
+      className={containerClasses + " cursor-default"}
+    >
+      {CardContent}
+    </div>
+  );
+};
 
 const Certificates = () => {
   return (

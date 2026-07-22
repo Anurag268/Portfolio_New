@@ -22,8 +22,7 @@ export const personalInfo = {
 
 export const socialLinks = {
   github: "https://github.com/Anurag268",
-  linkedin: "https://www.linkedin.com/in/anurag-singh-470134204/",
-  instagram: "",
+  linkedin: "https://www.linkedin.com/in/anurag-singh-470134204/"
 };
 
 export const heroContent = {
@@ -34,14 +33,14 @@ export const heroContent = {
   ctaPrimary: { text: "View My Work", href: "#projects" },
   ctaSecondary: {
     text: "Contact Me",
-    href: "mailto:anuragsingh78626@gmail.com?subject=Hiring Inquiry – Portfolio&body=Hello Anurag,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,",
+    href: "mailto:anuragsingh78626@gmail.com?subject=Hiring%20Inquiry%20%E2%80%93%20Portfolio&body=Hello%20Anurag%2C%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20discuss%20an%20opportunity%20with%20you.%0D%0A%0D%0ALooking%20forward%20to%20hearing%20from%20you.%0D%0ABest%20Regards%2C",
   },
   ctaResume: { text: "Download Resume", href: "/Anurag%20Singh%20Software%20Developer.pdf" },
 };
 
 export const aboutContent = {
   heading: "Hello!",
-  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Anurag Singh</span>, a Computer Science graduate based in Padrauna, U P, dedicated to crafting clean, functional, and highly scalable full-stack applications.`,
+  bio: `Hi, my name is <span class="text-black text-xl font-black mx-1 tracking-wide uppercase">Anurag Singh</span>, a Computer Science graduate based in U P, dedicated to crafting clean, functional, and highly scalable full-stack applications.`,
   techStack: ["Python", "Django", "React.js"],
 };
 
@@ -89,8 +88,7 @@ export const technicalSkills = {
       title: "Frameworks/Libraries",
       skills: [
         { name: "React.js", level: 90 },
-        { name: "Django", level: 88 },
-        { name: "Flask", level: 80 }
+        { name: "Django", level: 88 }
       ]
     },
     {
@@ -196,7 +194,7 @@ export const projects = [
       "Frontend Optimization"
     ],
     links: {
-      github: "https://github.com/Anurag268", // placeholder or real link if provided
+      github: "https://github.com/Anurag268/Shopper",
       demo: null,
     },
     isFlagship: true,
@@ -210,7 +208,20 @@ export const projects = [
       "A full-stack speech-to-text application using Flask, React.js, and REST APIs for real-time audio transcription. Built backend API endpoints for audio uploads, transcript processing, and history management. Integrated Deepgram API services using HTTP requests.",
     techTags: ["Flask", "React.js", "REST APIs", "Deepgram API", "JSON"],
     links: {
-      github: "https://github.com/Anurag268",
+      github: "https://github.com/Anurag268/Speech-to-Text-Application",
+    },
+    isFlagship: false,
+  },
+  {
+    id: "api-tester",
+    number: "03",
+    badge: "Tools",
+    title: "API Tester Tool",
+    description:
+      "Built an API testing application inspired by Postman using React.js and REST API concepts. Implemented support for HTTP methods, request headers, and JSON response handling. Improved understanding of backend APIs, HTTP protocols, and API debugging workflows.",
+    techTags: ["React.js", "REST API", "HTTP Protocols", "JSON"],
+    links: {
+      github: "https://github.com/Anurag268/API-Tester/",
     },
     isFlagship: false,
   }
@@ -222,6 +233,7 @@ export const certificates = {
       name: "Full Stack Development with Python & Manual Testing",
       issuer: "Besant Technologies (2025)",
       icon: "🐍",
+      url: "/Anurag%20Singh%20-%20Fullstack%20Python.pdf",
     },
     {
       name: "Web Development with React.js",
@@ -229,7 +241,7 @@ export const certificates = {
       icon: "⚛️",
     }
   ],
-  viewAllUrl: "#",
+  viewAllUrl: "https://drive.google.com/drive/folders/1WDsnB2SDbdlb22yihg_05XFQY4_HpQL6?usp=sharing",
 };
 
 export const education = {
