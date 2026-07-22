@@ -32,15 +32,15 @@ const Preloader = () => {
             className="relative text-5xl md:text-7xl font-black tracking-tighter"
           >
             {/* Background text (empty state) */}
-            <div className="text-red-900/30">
+            <div className="text-red-900/30 pb-4">
               {personalInfo.brandName}<span className="text-red-900/30">.</span>
             </div>
 
             {/* Foreground text (water fill state) */}
             <motion.div 
-              className="absolute top-0 left-0 text-white overflow-hidden whitespace-nowrap"
+              className="absolute top-0 left-0 text-white overflow-hidden whitespace-nowrap pb-4"
               initial={{ clipPath: 'inset(100% 0 0 0)' }}
-              animate={{ clipPath: 'inset(0% 0 0 0)' }}
+              animate={{ clipPath: 'inset(-10% 0 -10% 0)' }}
               transition={{ duration: 1.6, ease: "easeInOut", delay: 0.2 }}
             >
               {personalInfo.brandName}<span className="text-black">.</span>
